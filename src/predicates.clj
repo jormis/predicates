@@ -4,10 +4,10 @@
   (+ (f x) (g x)))
 
 (defn less-than [n]
-  :-)
+  (fn [x] (< x n)))
 
 (defn equal-to [n]
-  :-)
+  #(== % n))
 
 (defn set->predicate [a-set]
   :-)
